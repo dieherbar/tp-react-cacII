@@ -19,6 +19,12 @@
     margin: 1rem;
 
   }
+  .tarea{
+    color: rgb(174, 5, 5);
+    background: linear-gradient(
+        to left,transparent,#8ec28e,#52fc04
+        );
+  }
 /*.sentence {
   animation: highlight;
   animation-timeline: view();

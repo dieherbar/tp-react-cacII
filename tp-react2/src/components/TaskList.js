@@ -5,15 +5,19 @@ import styles from '@/styles/Button.module.css';
 
 const TaskList = ({ tasks, deleteTask }) => {
   return (
+    <>
     <ul>
       {tasks.map(task => (
+        <div className='tarea'>
         <li key={task.id}>
           {task.title}
           <button className={styles.boton} onClick={() => deleteTask(task.id)}>Eliminar</button>
           <Checkbox label='Tarea completada'></Checkbox>
         </li>
+        </div>
       ))}
     </ul>
+      </>
   );
 };
 
